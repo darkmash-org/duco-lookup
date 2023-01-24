@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUCO Lookup</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li class="title">DUCO Lookup</li>
+            <li><a href="./tools.html">Tools</a></li>
+            <li><a href="./donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="search_wrapper">
+            <div class="container">
+                <input type="text" class="search" placeholder="ᕲ DUCO Username">
+                <button class="submit"><img src="./icons/search.svg" alt="Lookup"> Lookup</button>
+            </div>
+        </div>
+
+        <div class="box_wrapper">
+            <div class="box">
+                <hr>
+                <div class="err">Enter a username</div>
+                <div class="loading"></div>
+                <div class="info">
+                    <div>Wallet Username: <span class="t_s username"></span></div>
+                    <div>Balance: <span class="t_s balance"></span></div>
+                    <hr>
+                    <div>Account Creation: <span class="t_s account_creation"></span></div>
+                    <div>Last Login: <span class="t_s last_login"></span></div>
+                    <hr>
+                    <div>Verified: <span class="t_s verified"></span></div>
+                    <div>Verified By: <span class="t_s verified_by"></span></div>
+                    <div>Verified Date: <span class="t_s verified_date"></span></div>
+                    <!-- <table>
+                        <tr>
+                            <td>Verified</td>
+                            <td class="verified"></td>
+                        </tr>
+                        <tr>
+                            <td>Verified By</td>
+                            <td class="verified_by"></td>
+                        </tr>
+                        <tr>
+                            <td>Verified Date</td>
+                            <td class="verified_date"></td>
+                        </tr>
+                    </table> -->
+                    <hr>
+                    <div>Achievements: <span class="t_s achievements"></span></div>
+                    <div>Items: <span class="t_s items"></span></div>
+                    <div>Miners: <span class="t_s miners"></span></div>
+                    <div>Warnings: <span class="t_s warnings"></span></div>
+                    <hr>
+                    <div>Stake Amount: <span class="t_s stake_amount"></span></div>
+                    <div>Stake Date: <span class="t_s stake_date"></span></div>
+                    <hr>
+                    <div>Prices: <span class="t_s prices"></span></div>
+                    <ul class="item_box item_box_prices"></ul>
+                    <div class="chart" id="chart_prices">
+                        <canvas></canvas>
+                    </div>
+                    <hr>
+                    <div>Transactions:</div>
+                    <div class="latest_transactions">
+                    </div>
+                    <div style="margin-top:1rem;margin-bottom: -1rem;">Transactions Chart:</div>
+                    <div class="chart" id="chart_transactions">
+                        <canvas></canvas>
+                    </div>
+                    <br><br>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

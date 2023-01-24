@@ -1,0 +1,262 @@
+
+@font-face {
+    font-family: "DUCO Lookup Sofia Sans";
+    src: url("SofiaSans.ttf");
+}
+
+:root {
+    color-scheme: dark;
+}
+
+*, *::before, *::after {
+    font-family: 'DUCO Lookup Sofia Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #010008;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+nav .title {
+    border-radius: 1rem;
+    padding: .4rem .6rem;
+    font-size: 14px;
+    border: 1px solid #2b2c36;
+}
+
+nav ul {
+    height: 40.38px;
+    border-radius: 15rem;
+    background: #1c1d25;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: .6rem 2rem;
+    padding-left: .3rem;
+}
+
+nav ul li a {
+    font-size: 14px;
+}
+
+.search_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+
+.search_wrapper .container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.search {
+    outline: none;
+    border-radius: 5px;
+    border: 1px dashed #2f313b;
+    background: #1c1d25;
+    padding: .8rem .7rem;
+    font-size: 17px;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.search:focus {
+    border-color: #ee7c1f;
+}
+
+.submit {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background: #ee7c1f;
+    font-size: 17px;
+    width: 20rem;
+    max-width: 100%;
+    padding: .6rem .7rem;
+    transition: 400ms;
+}
+
+.submit:hover {
+    background: #ca6c1f;
+}
+
+.submit:focus {
+    background: #5f2d05;
+}
+
+.submit img {
+    margin-right: 7px;
+    height: 23px;
+    filter: invert(1);
+}
+
+.box_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    max-width: calc(100% - 2rem);
+    width: 60rem;
+}
+
+hr {
+    border: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.5px;
+    background: #2e2c2c;
+    margin: 1rem 0;
+}
+
+.box hr:first-child {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.err {
+    user-select: none;
+    color: #898989;
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 49.5%;
+    transform: translate(-50%, -50%);
+}
+
+.loading::before {
+    position: absolute;
+    content: 'AXO';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #2e2e2e;
+    background: #272727;
+    animation: rotate 1.3s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0;
+    } 100% {
+        rotate: 360deg;
+    }
+}
+
+.chart {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border: 1px solid #2e2c2c;
+    padding: 1rem;
+}
+
+.info {
+    display: none;
+}
+
+.info div {
+    word-break: break-all;
+}
+
+.info > div {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info > div .t_s {
+    font-weight: normal;
+    color: #fff8f3;
+    /* font-size: 16px; */
+}
+
+.info > table tr td:first-child {
+    font-weight: bold;
+    /* font-size: 1.2rem; */
+}
+
+.item_box {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: .3rem;
+    margin-top: 1rem;
+}
+
+.item_box li {
+    border-radius: 5px;
+    border: 1px solid #29292b;
+    background: #202020;
+    padding: .3rem .6rem;
+}
+
+.latest_transactions {
+    margin-top: 1rem;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    font-size: 1.1rem!important;
+}
+
+.latest_transactions > div {
+    background: #202020;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.latest_transactions > div span {
+    font-weight: 400;
+}
+
+.latest_transactions .amount {
+    color: #00c07b;
+}
+
+.latest_transactions .sender {
+    color: #5E68FF;
+}
+
+.latest_transactions .hash {
+    color: #7c8000;
+}
+
+.latest_transactions .id {
+    color: #FDA769;
+}
+
+.latest_transactions .recipient {
+    color: #5BC0F8;
+}
+
+.latest_transactions .datetime {
+    color: #F1F7B5;
+}
