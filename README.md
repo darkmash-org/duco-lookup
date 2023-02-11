@@ -1,4 +1,5 @@
-# duco-lookup
+# Duino lookup
+
 Lookup Duino-Coin usernames and other details
 
-# Author ~ Axorax
+# Main Author ~ Axorax
